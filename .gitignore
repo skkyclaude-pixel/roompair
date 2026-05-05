@@ -4,4 +4,4 @@ node_modules/
 state/
 *.log
 .env
-.DS_Store
+.DS_Storeagent-library/
