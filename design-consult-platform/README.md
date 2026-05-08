@@ -1,4 +1,4 @@
-# Design Consult UK — MVP
+# RoomPair — MVP
 
 Simple directory + booking platform for UK-based interior design Instagram creators.
 
