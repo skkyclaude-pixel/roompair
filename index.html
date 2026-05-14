@@ -1,148 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Stylists | Book Instagram's Best Interior Creators</title>
+  <title>RoomPair — Find Your Interior Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-    
-    /* Hero */
-    .hero { padding: 80px 0; text-align: center; background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%); }
-    .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 20px; line-height: 1.2; }
-    .hero p { font-size: 1.25rem; color: #666; max-width: 600px; margin: 0 auto 30px; }
-    .btn { display: inline-block; padding: 16px 32px; background: #1a1a1a; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s; }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-secondary { background: #fff; color: #1a1a1a; border: 2px solid #1a1a1a; margin-left: 10px; }
-    
-    /* How It Works */
-    .steps { padding: 60px 0; }
-    .steps h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; }
-    .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-    .step { text-align: center; padding: 30px; }
-    .step-num { width: 40px; height: 40px; background: #1a1a1a; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: 700; }
-    .step h3 { margin-bottom: 10px; }
-    
-    /* Stylists */
-    .stylists { padding: 60px 0; background: #fafafa; }
-    .stylists h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; }
-    .stylists-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-    .stylist-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-    .stylist-img { height: 200px; background: #ddd; display: flex; align-items: center; justify-content: center; color: #888; font-size: 1.2rem; }
-    .stylist-info { padding: 20px; }
-    .stylist-name { font-size: 1.25rem; font-weight: 600; }
-    .stylist-ig { color: #666; font-size: 0.9rem; margin-bottom: 10px; }
-    .stylist-bio { margin-bottom: 15px; color: #444; }
-    .stylist-price { font-weight: 600; color: #1a1a1a; }
-    .stylist-btn { display: block; width: 100%; padding: 12px; background: #1a1a1a; color: #fff; text-align: center; text-decoration: none; border-radius: 8px; margin-top: 15px; }
-    
-    /* CTA */
-    .cta { padding: 80px 0; text-align: center; }
-    .cta h2 { margin-bottom: 20px; font-size: 2rem; }
-    .cta p { margin-bottom: 30px; color: #666; }
-    
-    /* Footer */
-    footer { padding: 40px 0; text-align: center; border-top: 1px solid #eee; color: #666; }
-    
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .steps-grid, .stylists-grid { grid-template-columns: 1fr; }
-      .btn { display: block; margin: 10px 0; }
-    }
+    body { font-family: system-ui, sans-serif; background: #faf8f6; }
   </style>
 </head>
-<body>
+<body class="min-h-screen">
+  <!-- Hero -->
+  <section class="bg-stone-900 text-white py-20 px-6 text-center">
+    <h1 class="text-4xl font-bold mb-4">RoomPair</h1>
+    <p class="text-xl mb-8">Book 30-min consultations with UK interior design creators</p>
+    <p class="text-3xl font-bold text-orange-400">£100 / 30 minutes</p>
+  </section>
 
-<section class="hero">
-  <div class="container">
-    <h1>The Instagram Interior Designers<br>— Now Bookable</h1>
-    <p>Connect with London's best home stylists from Instagram. Get personalized design advice via video call, starting at £50.</p>
-    <a href="https://buy.stripe.com/test_eVq5kE06bbygboX4t7ao800" class="btn">Book a Consultation</a>
-    <a href="#stylists" class="btn btn-secondary">Browse Stylists</a>
-  </div>
-</section>
-
-<section class="steps">
-  <div class="container">
-    <h2>How It Works</h2>
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Browse</h3>
-        <p>Explore our curated stylists — all active Instagram creators with a proven aesthetic.</p>
+  <!-- Designers -->
+  <section class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-2xl font-bold text-center mb-10">Our Designers</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Designer 1 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="font-bold text-lg">@redthreadhome</h3>
+        <p class="text-sm text-gray-600 mb-2">Kitchens & Bathrooms</p>
+        <p class="text-sm mb-4">Award-winning interior design studio creating timeless, layered spaces.</p>
+        <a href="https://cal.com" class="block text-center bg-orange-500 text-white py-2 rounded-full font-medium hover:bg-orange-600">Book — £100</a>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>Book</h3>
-        <p>Select a time that works. Pay securely online. Your session is confirmed instantly.</p>
+      <!-- Designer 2 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="font-bold text-lg">@lucyalicehome</h3>
+        <p class="text-sm text-gray-600 mb-2">Living Rooms & Styling</p>
+        <p class="text-sm mb-4">Beautiful spaces on any budget. Expert at mixing high street finds.</p>
+        <a href="https://cal.com" class="block text-center bg-orange-500 text-white py-2 rounded-full font-medium hover:bg-orange-600">Book — £100</a>
       </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Transform</h3>
-        <p>Meet via video call. Get actionable advice to upgrade your space — your way.</p>
+      <!-- Designer 3 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="font-bold text-lg">@little_edwardian_semi</h3>
+        <p class="text-sm text-gray-600 mb-2">Period Homes & Bathrooms</p>
+        <p class="text-sm mb-4">Passionate about restoring period character in Edwardian & Victorian homes.</p>
+        <a href="https://cal.com" class="block text-center bg-orange-500 text-white py-2 rounded-full font-medium hover:bg-orange-600">Book — £100</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="stylists" id="stylists">
-  <div class="container">
-    <h2>Featured Stylists</h2>
-    <div class="stylists-grid">
-      
-      <div class="stylist-card">
-        <div class="stylist-img" style="background: #f5e6d3;">📷 @redthreaadhome</div>
-        <div class="stylist-info">
-          <div class="stylist-name">Red Thread Home</div>
-          <div class="stylist-ig">@redthreaadhome</div>
-          <div class="stylist-bio">Bohemian living. Sustainable, curated spaces with character.</div>
-          <div class="stylist-price">From £50 / 30 min</div>
-          <a href="https://buy.stripe.com/test_eVq5kE06bbygboX4t7ao800" class="stylist-btn">Book Now</a>
-        </div>
-      </div>
-
-      <div class="stylist-card">
-        <div class="stylist-img" style="background: #e6f5e6;">📷 @munksandme</div>
-        <div class="stylist-info">
-          <div class="stylist-name">Munks & Me</div>
-          <div class="stylist-ig">@munksandme</div>
-          <div class="stylist-bio">Modernminimal. Clean lines, neutral palettes, thoughtful detail.</div>
-          <div class="stylist-price">From £50 / 30 min</div>
-          <a href="https://buy.stripe.com/test_eVq5kE06bbygboX4t7ao800" class="stylist-btn">Book Now</a>
-        </div>
-      </div>
-
-      <div class="stylist-card">
-        <div class="stylist-img" style="background: #e6e6f5;">📷 @studiokiri</div>
-        <div class="stylist-info">
-          <div class="stylist-name">Studio Kiri</div>
-          <div class="stylist-ig">@studiokiri</div>
-          <div class="stylist-bio">Japanese-inspired. Calm, intentional spaces that breathe.</div>
-          <div class="stylist-price">From £50 / 30 min</div>
-          <a href="https://buy.stripe.com/test_eVq5kE06bbygboX4t7ao800" class="stylist-btn">Book Now</a>
-        </div>
-      </div>
-
+  <!-- Apply -->
+  <section class="bg-stone-100 py-16 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Are You a Designer?</h2>
+      <p class="mb-6">Join RoomPair and connect with homeowners nationwide.</p>
+      <a href="https://formspree.io/f/mnjwaapr" class="inline-block bg-stone-900 text-white px-8 py-3 rounded-full font-medium hover:bg-stone-700">Apply Now</a>
     </div>
-  </div>
-</section>
-
-<section class="cta" id="book">
-  <div class="container">
-    <h2>Ready to Transform Your Home?</h2>
-    <p>Join hundreds of homeowners who've elevated their space with help from Instagram's best stylists.</p>
-    <a href="https://buy.stripe.com/test_eVq5kE06bbygboX4t7ao800" class="btn">Book Your Consultation</a>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <p>© 2026 Home Stylists | London & Remote</p>
-    <p>hello@homestylists.co.uk</p>
-  </div>
-</footer>
-
+  </section>
 </body>
 </html>
